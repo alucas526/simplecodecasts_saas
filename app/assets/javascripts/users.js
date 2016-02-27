@@ -8,7 +8,7 @@ $(document).ready(function(){
         var ccNum = $('#card_number').val(),
             cvcNum = $('#card_code').val(),
             expMonth = $('#card_month').val(),
-            expYear = $('card_year').val();
+            expYear = $('#card_year').val();
             
         if (!error) {
             // Get the Stripe token:
@@ -24,7 +24,7 @@ $(document).ready(function(){
     
     function stripeResponseHandler(status, response) {
         // Get a reference to the form:
-        var f = $("new_user");
+        var f = $("#new_user");
         
         // Get the token from the response:
         var token = response.id;
