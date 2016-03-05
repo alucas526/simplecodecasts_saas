@@ -23,12 +23,12 @@
     
     <div class="field form-group">
         <%= label_tag :card_number, "Credit Card Number" %>
-        <%= text_field_tag :card_number, nil, name: nil, class: 'form-control' %>
+        <%= text_field_tag :card_number, nil, name: nil, class: 'form-control', maxlength: 19 %>
     </div>
 
     <div class="field form-group">
         <%= label_tag :card_code, "Security Code (CCV)" %>
-        <%= text_field_tag :card_code, nil, name: nil, class: 'form-control' %>
+        <%= text_field_tag :card_code, nil, name: nil, class: 'form-control', maxlength: 4 %>
     </div>
 
     <div class="field form-group">
