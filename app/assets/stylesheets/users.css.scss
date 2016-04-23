@@ -11,3 +11,27 @@
     background-color: #337ab7;
     color: #fff;
 }
+
+.well.profile-block {
+    color: #fff;
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.well.profile-description {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.well.profile-contact {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.user-avatar {
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 10px 5px -5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 10px 5px -5px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 10px 5px -5px rgba(50, 50, 50, 0.75);
+}
