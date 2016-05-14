@@ -4,7 +4,7 @@
     </div>
     <div class="col-md-6">
         <h1><%= "#{@user.profile.first_name} #{@user.profile.last_name}" %></h1>
-        <h3><span class="job-title-icon"><%= job_title_icon %></span> <%= "#{@user.profile.job_title}" %></h3>
+        <h3 class="title-h3"><span class="job-title-icon"><%= job_title_icon %></span> <%= "#{@user.profile.job_title}" %></h3>
         <div class="well profile-block profile-description">
             <h3>About Me</h3>
             <%= @user.profile.description %>
@@ -15,6 +15,9 @@
                 <%= "Email: #{@user.profile.contact_email}" %><br />
                 <%= "Phone: #{@user.profile.phone_number}" %><br />
             </div>
+        <% end %>
+        <% if current_user.id == @user.profile.user_id %>
+            <%= link_to "Edit Profile", edit_user_profile_path(user_id: current_user.id), class: "btn btn-primary" %>
         <% end %>
     </div>
 </div>
